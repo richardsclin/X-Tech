@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Edit Employee</h1>
+<div mat-dialog-content>
+  EmployeeId: {{data.employeeId}}
+  <mat-form-field><input matInput placeholder="FullName" [(ngModel)]="data.fullName" required /></mat-form-field>
+  <mat-form-field><input matInput placeholder="Empcode" [(ngModel)]="data.empcode" required /></mat-form-field>
+  <mat-form-field><input matInput placeholder="Mobile" [(ngModel)]="data.mobile" required /></mat-form-field>
+  <mat-form-field><input matInput placeholder="Position" [(ngModel)]="data.position" required /></mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="false">Cancel</button>
+  <button mat-button (click)="confirmEdit()">OK</button>
+</div>

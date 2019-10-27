@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Are you sure to delete?</h1>
+<div mat-dialog-content>
+  EmployeeId: {{data.employeeId}}
+  <p></p>
+  FullName: {{data.fullName}}
+  <p></p>
+  Empcode: {{data.empcode}}
+  <p></p>
+  Mobile: {{data.mobile}}
+  <p></p>
+  Position: {{data.position}}
+  <p></p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="false">Cancel</button>
+  <button mat-button (click)="confirmDelete()">Delete</button>
+</div>
