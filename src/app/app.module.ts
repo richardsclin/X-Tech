@@ -16,8 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HttpModule } from '@angular/http'; 
-import { AddHeaderInterceptor } from './auth/header_intercetor'; 
+import { HttpModule } from '@angular/http';
+import { AddHeaderInterceptor } from './auth/header_intercetor';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,7 +27,7 @@ import { AddHeaderInterceptor } from './auth/header_intercetor';
     BrowserAnimationsModule,
     FormsModule,
     MatButtonModule, MatIconModule, MatDialogModule, MatInputModule, MatSortModule, MatTableModule, MatToolbarModule, MatPaginatorModule, MatGridListModule, MatProgressSpinnerModule, MatTabsModule, MatDatepickerModule, MatNativeDateModule, MatCardModule, MatSliderModule, MatSlideToggleModule, MatMenuModule, MatSelectModule, MatOptionModule,
-    HttpClientModule,    
+    HttpClientModule,
     AppRoutingModule,
     NgbModule.forRoot(),
     ThemeModule.forRoot(),
